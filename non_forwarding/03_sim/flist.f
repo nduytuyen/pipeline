@@ -1,0 +1,40 @@
+-sv
+-timescale 1ns/100ps
+
+# SOURCE CODE FILES
+./../00_src/alu/adder.sv
+./../00_src/alu/alu.sv
+./../00_src/alu/and_32bit.sv
+./../00_src/alu/full_adder.sv
+./../00_src/alu/or_32bit.sv
+./../00_src/alu/sll.sv
+./../00_src/alu/slt.sv
+./../00_src/alu/sltu.sv
+./../00_src/alu/sra.sv
+./../00_src/alu/srl.sv
+./../00_src/alu/subtractor.sv
+./../00_src/alu/xor_32bit.sv
+./../00_src/cells/mux_2to1.sv
+./../00_src/cells/mux_4to1.sv
+./../00_src/control/ctrl_unit.sv
+./../00_src/control/hazard_unit.sv
+./../00_src/datapath/brc.sv
+./../00_src/datapath/imem.sv
+./../00_src/datapath/ImmGen.sv
+./../00_src/datapath/pc_plus4.sv
+./../00_src/datapath/regfile.sv
+./../00_src/lsu/data_mem.sv
+./../00_src/lsu/input_buffer.sv
+./../00_src/lsu/lsu.sv
+./../00_src/lsu/output_buffer.sv
+./../00_src/pipeline/EX_MEM.sv
+./../00_src/pipeline/ID_EX.sv
+./../00_src/pipeline/IF_ID.sv
+./../00_src/pipeline/MEM_WB.sv
+./../00_src/pipelined.sv
+
+# TESTBENCH FILES
+./../01_bench/driver.sv
+./../01_bench/scoreboard.sv
+./../01_bench/tbench.sv
+./../01_bench/tlib.svh

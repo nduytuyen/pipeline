@@ -1,0 +1,105 @@
+xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s001: Started on Apr 19, 2026 at 22:18:52 EDT
+xrun
+	-access +rwc
+	-f ./flist.f
+		-sv
+		-timescale 1ns/100ps
+		./../00_src/alu/adder.sv
+		./../00_src/alu/alu.sv
+		./../00_src/alu/and_32bit.sv
+		./../00_src/alu/full_adder.sv
+		./../00_src/alu/or_32bit.sv
+		./../00_src/alu/sll.sv
+		./../00_src/alu/slt.sv
+		./../00_src/alu/sltu.sv
+		./../00_src/alu/sra.sv
+		./../00_src/alu/srl.sv
+		./../00_src/alu/subtractor.sv
+		./../00_src/alu/xor_32bit.sv
+		./../00_src/cells/mux_2to1.sv
+		./../00_src/cells/mux_4to1.sv
+		./../00_src/control/ctrl_unit.sv
+		./../00_src/control/forwarding_unit.sv
+		./../00_src/control/hazard_unit.sv
+		./../00_src/datapath/brc.sv
+		./../00_src/datapath/imem.sv
+		./../00_src/datapath/ImmGen.sv
+		./../00_src/datapath/pc_plus4.sv
+		./../00_src/datapath/regfile.sv
+		./../00_src/lsu/data_mem.sv
+		./../00_src/lsu/input_buffer.sv
+		./../00_src/lsu/lsu.sv
+		./../00_src/lsu/output_buffer.sv
+		./../00_src/pipeline/EX_MEM.sv
+		./../00_src/pipeline/ID_EX.sv
+		./../00_src/pipeline/IF_ID.sv
+		./../00_src/pipeline/MEM_WB.sv
+		./../00_src/pipelined.sv
+		./../01_bench/driver.sv
+		./../01_bench/scoreboard.sv
+		./../01_bench/tbench.sv
+		./../01_bench/tlib.svh
+Loading snapshot worklib.tbench:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /opt/cadence/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> run
+
+PIPELINE - ISA tests
+
+add......PASS
+addi.....PASS
+sub......PASS
+and......PASS
+andi.....PASS
+or.......PASS
+ori......PASS
+xor......PASS
+xori.....PASS
+slt......PASS
+slti.....PASS
+sltu.....PASS
+sltiu....PASS
+sll......PASS
+slli.....PASS
+srl......PASS
+srli.....PASS
+sra......PASS
+srai.....PASS
+lw.......PASS
+lh.......PASS
+lhu......PASS
+lb.......PASS
+lbu......PASS
+sw.......PASS
+sh.......PASS
+sb.......PASS
+auipc....PASS
+lui......PASS
+beq......PASS
+bne......PASS
+blt......PASS
+bltu.....PASS
+bge......PASS
+bgeu.....PASS
+jal......PASS
+jalr.....PASS
+malgn....PASS
+iosw.....PASS
+
+=================== Result ===================
+Total Clock Cycles Executed = 7830
+Total Instructions Executed = 6275
+Total Branch Instructions   = 1602
+Total Branch Mispredictions = 1449
+
+----------------------------------------------
+Instruction Per Cycle (IPC) = 0.80
+Branch Misprediction Rate   = 90.45 %
+
+END of ISA tests
+
+Simulation complete via $finish(1) at time 31372 NS + 1
+../01_bench/scoreboard.sv:85         $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s001: Exiting on Apr 19, 2026 at 22:18:53 EDT  (total: 00:00:01)

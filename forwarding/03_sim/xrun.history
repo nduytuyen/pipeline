@@ -1,0 +1,5 @@
+s1(19Apr2026:05:52:37):  xrun -access +rwc -f ./flist.f 
+s2(19Apr2026:05:55:28):  xrun -access +rwc -f ./flist.f 
+s3(19Apr2026:05:59:09):  xrun -access +rwc -f ./flist.f 
+s4(19Apr2026:10:28:49):  xrun -access +rwc -f ./flist.f 
+s5(19Apr2026:22:18:53):  xrun -access +rwc -f ./flist.f 
